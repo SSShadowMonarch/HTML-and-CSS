@@ -1,0 +1,111 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+body{  
+
+  background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: right 600px top 370px;
+    color:#000000;
+    background: linear-gradient(to right, #E22865, #37ADCD);
+   text-align:center;
+ }
+ 
+ #characteristic {
+        
+    margin: auto;
+     width: 60%;
+ color:orange;
+     padding: 21px;
+ }
+ 
+  #animated{
+   animation-name: move;
+   animation-duration: 5s;
+   nimation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+  cursor: url("http://downloads.totallyfreecursors.com/cursor_files/gold_star.ani"), url("http://downloads.totallyfreecursors.com/thumbnails/gold_star.gif"), auto;
+ }
+ 
+ 
+ #space{
+   font-size:25px;
+  
+ }
+ 
+ a.button {
+   background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
+   border-radius: 7px;
+   margin-bottom:70px;
+   box-shadow: 0px 2px 4px rgba(34,62,66,.25);
+   color: purple;
+   font-size: 20px;
+   letter-spacing: 2px;
+   padding: 6px 22px;
+   text-decoration: none;
+   -webkit-transition: box-shadow 1s ease;
+   transition: box-shadow 1s ease;
+   hover {
+   box-shadow: 0px 4px 4px rgba(33,62,66,.5);
+   -webkit-transition: box-shadow 1s ease;
+   transition: box-shadow 1s ease;
+    
+   }
+h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 25px;
+}   

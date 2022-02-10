@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>This is a page free of prejudice, where you can find extraordinary insights about different horoscope signs. However, it is important to note, all information given here is based on the position of the Sun according to your date of birth, and any interpretations without the image of the entire horoscope are only partially accurate.However, there is a world behind the scenes, one that not many have seen. There are international certifications, three or four year studies in many countries of the world and a different approach to Astrology as a helping tool to Psychology and Alternative Medicine.Although there has been some scientific research on the subject, there was no strong basis for its findings and there is little initiative to have any more of it in the near future. So we, astrologers, are bound to a life of exile, no matter if we are educated or not, scientists or not, smart or not, responsible or not. We strive to study and prove that astrology is a science of studying positions of astronomical bodies and their impact on our life. The true function of astrology is not exactly to predict our future, but to help us develop, grow and understand ourselves better.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ssiddhant.jpeg" alt="Dr. Siddhant Singh" style="width:50%">
+      <div class="container">
+        <h2>Siddhant Singh</h2>
+        <p class="title">CEO & Founder</p>
+        <p>A Phd holder in astrology science with an experience of 8 yeras of practical astrology, planetary position predictions and deciphering zodiac sign on the basis of personality.</p>
+        <p><button class="button" onclick="showcontacts();">Contact</button></p>
+        <div id="contacts"> </div>
+        <div id="1"> </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="karan.jpeg" alt="Karan Singh" style="width:50%">
+      <div class="container">
+        <h2>Karan Singh</h2>
+        <p class="title">Designer</p>
+        <p>A computer science engineeering graduate from Michigan University and a web developer  with 10+ years of experience in full stack web development and a self taught astrologer.</p>
+        <p><button class="button" onclick="showcontact();">Contact</button></p>
+        <div id="contact">  </div>
+        <div id="2"> </div>
+      </div>
+    </div>
+</div>
+<script>
+    function showcontact(){
+        document.getElementById("contact").innerHTML=` Email:karansingh.skd@gmail.com`
+        document.getElementById("2").innerHTML=` Contact No:+915969798999`
+    }
+
+    function showcontacts(){
+        document.getElementById("contacts").innerHTML=`Email:sidsingh3210@gmail.com`
+        document.getElementById("1").innerHTML=` Contact No:+911929394909`
+    }
+
+</script>
+
+
+</body>
+</html>
